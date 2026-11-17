@@ -1,0 +1,55 @@
+=== ls -la ~ ===
+total 60
+drwxr-x--- 8 pritam0708 pritam0708 4096 Nov 17 05:14 .
+drwxr-xr-x 3 root       root       4096 Sep 29 04:18 ..
+-rw------- 1 pritam0708 pritam0708 8000 Nov 17 04:55 .bash_history
+-rw-r--r-- 1 pritam0708 pritam0708  220 Sep 29 04:18 .bash_logout
+-rw-r--r-- 1 pritam0708 pritam0708 3771 Sep 29 04:18 .bashrc
+drwxr-x--- 4 pritam0708 pritam0708 4096 Sep 29 04:19 .cache
+drwxr-x--- 3 pritam0708 pritam0708 4096 Sep 29 04:19 .config
+-rw-r--r-- 1 pritam0708 pritam0708   97 Nov  3 04:18 .gitconfig
+drwxr-xr-x 2 pritam0708 pritam0708 4096 Sep 29 04:19 .landscape
+-rw------- 1 pritam0708 pritam0708   20 Nov 17 04:53 .lesshst
+drwx------ 3 pritam0708 pritam0708 4096 Oct  6 09:13 .local
+-rw-r--r-- 1 pritam0708 pritam0708    0 Nov 17 04:01 .motd_shown
+-rw-r--r-- 1 pritam0708 pritam0708  807 Sep 29 04:18 .profile
+drwxr-xr-x 7 pritam0708 pritam0708 4096 Nov 17 05:14 DeveloperPortfolio
+drwxr-xr-x 4 pritam0708 pritam0708 4096 Nov  3 04:20 cse103_lab
+-rw-rw-r-- 1 pritam0708 pritam0708    0 Oct  6 09:56 hello.sh
+-rw------- 1 pritam0708 pritam0708    0 Oct  6 10:00 nano.1811.save
+=== ps aux | head -10 ===
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.1  0.1  24212 15368 ?        Ss   06:13   0:00 /sbin/init
+root           2  0.0  0.0   3180  2208 hvc0     Sl+  06:13   0:00 /init
+root           7  0.0  0.0   3180  2040 hvc0     Sl+  06:13   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          47  0.0  0.2  50396 17072 ?        S<s  06:13   0:00 /usr/lib/systemd/systemd-journald
+systemd+      67  0.0  0.1  22428 14532 ?        Ss   06:13   0:00 /usr/lib/systemd/systemd-resolved
+root          89  0.1  0.1  35252 12416 ?        Ss   06:13   0:01 /usr/lib/systemd/systemd-udevd
+root         155  0.0  0.0   2888  2076 ?        Ss   06:13   0:00 /bin/sh /usr/lib/systemd/scripts/chronyd-starter.sh -n -F 1
+root         156  0.0  0.0   4472  3224 ?        Ss   06:13   0:00 /usr/sbin/cron -f -P
+message+     157  0.0  0.0   8824  5416 ?        Ss   06:13   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+=== df -h ===
+Filesystem      Size  Used Avail Use% Mounted on
+none            3.7G     0  3.7G   0% /usr/lib/modules/6.18.33.2-microsoft-standard-WSL2
+none            3.7G  4.0K  3.7G   1% /mnt/wsl
+drivers         266G  198G   69G  75% /usr/lib/wsl/drivers
+/dev/sdd       1007G  1.8G  954G   1% /
+none            3.7G   56K  3.7G   1% /mnt/wslg
+none            3.7G     0  3.7G   0% /usr/lib/wsl/lib
+rootfs          3.7G  2.8M  3.7G   1% /init
+none            3.7G  524K  3.7G   1% /run
+none            3.7G     0  3.7G   0% /run/lock
+none            3.7G     0  3.7G   0% /run/shm
+none            3.7G  104K  3.7G   1% /mnt/wslg/versions.txt
+none            3.7G  104K  3.7G   1% /mnt/wslg/doc
+C:\             266G  198G   69G  75% /mnt/c
+D:\             182G   63G  119G  35% /mnt/d
+none            1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           3.7G     0  3.7G   0% /tmp
+none            1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+none            1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           758M   12K  758M   1% /run/user/1000
+=== free -h ===
+               total        used        free      shared  buff/cache   available
+Mem:           7.4Gi       556Mi       6.8Gi       3.5Mi       178Mi       6.8Gi
+Swap:          2.0Gi          0B       2.0Gi
