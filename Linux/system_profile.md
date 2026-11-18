@@ -4,7 +4,7 @@
 | --- | --- |
 | CPU model and cores | AMD Ryzen 7 7445HS w/ Radeon 740M Graphics; 6 cores, 12 logical CPUs |
 | Total and available RAM | 7.4 GiB total; 6.9 GiB available |
-| Primary storage size and type | WSL virtual disk reported as 1 TB; physical SSD/HDD type not identified by `lsblk` |
+| Primary storage size and type | 512 GB SSD (WD PC SN5000S SDEQNSJ-512G-1002; Windows reports 512110190592 bytes; WSL virtual disk appears as 1 TB) |
 | Operating system and kernel | Ubuntu 26.04.1 LTS; Linux 6.18.33.2-microsoft-standard-WSL2 |
 
 ## Binary Number Representation
