@@ -1,0 +1,21 @@
+========================================
+System Information Report — Pritam Singh
+Roll number: 2601730287
+Date: 2026-11-17
+========================================
+
+CPU
+Model: AMD Ryzen 7 7445HS w/ Radeon 740M Graphics
+Cores (logical CPUs): 12
+
+Memory
+Total: 7.4Gi
+Used: 565Mi
+
+Top 3 processes by CPU usage
+    PID COMMAND         %CPU
+   1004 bash            25.0
+    959 wsl-pro-service  0.3
+     89 systemd-udevd    0.1
+
+Report generated successfully.
